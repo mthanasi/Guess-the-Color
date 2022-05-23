@@ -18,7 +18,7 @@ The syntax of RGB is as follows: ```rgb(r, g, b)```, where the value of each col
 
 ## Page published at:
 
-[https://mthanasi.github.io/Guess-the-Color/](https://mthanasi.github.io/Guess-the-Color/)
+[https://mthanasi.github.io/guess-the-color/](https://mthanasi.github.io/guess-the-color/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
