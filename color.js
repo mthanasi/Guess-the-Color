@@ -15,19 +15,18 @@ function init() {
   // add events for mode buttons
   setupModes();
 
-  //add click events on squares 
+  //add click events on squares
   setupSquares();
 
   reset();
 }
 
 newGame.addEventListener("click", function () {
-  reset()
+  reset();
 });
 
-//reset the colors 
+//reset the colors
 function reset() {
-
   h1.style.backgroundColor = "steelblue";
   msg.textContent = "";
   newGame.textContent = "NEW GAME";
@@ -42,12 +41,10 @@ function reset() {
       squares[i].style.display = "block";
 
       squares[i].style.backgroundColor = colors[i];
-    }
-    else {
+    } else {
       squares[i].style.display = "none";
     }
   }
-
 }
 
 //set up events for mode buttons
@@ -59,10 +56,9 @@ function setupModes() {
 
       this.classList.add("selected");
 
-      this.textContent === "EASY" ? n = 3 : n = 6;
+      this.textContent === "EASY" ? (n = 3) : (n = 6);
 
       reset();
-
     });
   }
 }
@@ -77,8 +73,7 @@ function setupSquares() {
       if (clickedColor != picked) {
         this.style.backgroundColor = "#232323";
         msg.textContent = "TRY AGAIN";
-      }
-      else {
+      } else {
         msg.textContent = "CORRECT";
         change_col(clickedColor);
         h1.style.backgroundColor = clickedColor;
